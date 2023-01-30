@@ -11,7 +11,7 @@ function Skills() {
     return (
         <article>
             <Section title={skills.title} description={skills.description} />
-            <section className="py-6">
+            <section className="pt-6">
                 <div>
                     <h3 className="font-bold text-gray-900">Frontend</h3>
                     <ul className="py-4">
