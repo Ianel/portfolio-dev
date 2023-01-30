@@ -3,12 +3,8 @@ import { hero } from "../../assets/images";
 
 function Header() {
     return (
-        <header className="mb-6">
-            <img
-                className="w-3/4 mx-auto mt-6"
-                src={hero}
-                alt="Ianel Tombozafy"
-            />
+        <header className="pt-6">
+            <img className="w-3/4 mx-auto" src={hero} alt="Ianel Tombozafy" />
             <h1 className="text-2xl text-gray-900 text-center my-6 font-bold">
                 Ianel Tombozafy
             </h1>
