@@ -3,7 +3,7 @@ import { hero } from "../../assets/images";
 
 function Header() {
     return (
-        <header className="mb-4">
+        <header className="mb-6">
             <img
                 className="w-3/4 mx-auto mt-6"
                 src={hero}

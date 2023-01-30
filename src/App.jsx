@@ -1,12 +1,13 @@
 import React from "react";
-import { Header, TopLine } from "./components";
+import { About, Header, TopLine } from "./components";
 
 function App() {
     return (
         <>
             <TopLine />
-            <main className="px-4">
+            <main className="px-5">
                 <Header />
+                <About />
             </main>
         </>
     );

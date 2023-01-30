@@ -1,4 +1,5 @@
 import Header from "./Header";
 import TopLine from "./TopLine";
+import About from "./About";
 
-export { Header, TopLine };
+export { Header, TopLine, About };
