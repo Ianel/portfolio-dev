@@ -1,6 +1,6 @@
 import React from "react";
 import { FaFacebook, FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
-import { hero } from "../../assets/images";
+import { BgHero, hero } from "../../assets/images";
 
 function Hero() {
     return (
@@ -8,7 +8,12 @@ function Hero() {
             id="home"
             className="flex lg:flex-row flex-col my-4 md:my-16 lg:h-[85vh] justify-between items-center md:px-12"
         >
-            <div className="lg:w-1/2 h-full bg-hero bg-center bg-cover bg-no-repeat">
+            <div className="lg:w-1/2 h-full relative">
+                <img
+                    className="mx-auto top-0 absolute object-cover h-full"
+                    src={BgHero}
+                    alt="Hero"
+                />
                 <img
                     className="mx-auto object-cover rounded-full h-full drop-shadow-2xl"
                     src={hero}
