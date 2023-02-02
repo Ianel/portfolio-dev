@@ -12,7 +12,7 @@ function Testimonials() {
                 These are the testimonials of people I've been working with
             </h3>
             <div className="flex justify-center items-center">
-                <article className="w-80 shadow-lg p-5 bg-white">
+                <article className="w-full md:w-80 shadow-lg p-5 bg-white">
                     <div className="flex justify-between items-stretch pb-5">
                         <div>
                             <h3>Randrianjohany Marielle</h3>
@@ -26,7 +26,7 @@ function Testimonials() {
                             alt=""
                         />
                     </div>
-                    <p className="leading-5 text-xs">
+                    <p className="leading-5 tracking-wide">
                         <FaQuoteLeft className="text-green-500" />
                         Premièrement, le site a permis à ma page d'être visible
                         et d'attirer de plus vaste cible potentiel. Il a aussi

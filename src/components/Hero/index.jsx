@@ -26,28 +26,22 @@ function Hero() {
                 </p>
                 <div className="flex justify-center items-center gap-6">
                     <a
-                        href=""
+                        href="https://web.facebook.com/ianel.tombozafy"
                         className="hover:text-indigo-700 hover:scale-110 cursor-pointer transform transition-all text-2xl"
                     >
                         <FaFacebook />
                     </a>
                     <a
-                        href=""
+                        href="https://www.linkedin.com/in/ianel-tombozafy"
                         className="hover:text-indigo-700 hover:scale-110 cursor-pointer transform transition-all text-2xl"
                     >
                         <FaLinkedin />
                     </a>
                     <a
-                        href=""
+                        href="https://github.com/Ianel"
                         className="hover:text-indigo-700 hover:scale-110 cursor-pointer transform transition-all text-2xl"
                     >
                         <FaGithub />
-                    </a>
-                    <a
-                        href=""
-                        className="hover:text-indigo-700 hover:scale-110 cursor-pointer transform transition-all text-2xl"
-                    >
-                        <FaEnvelope />
                     </a>
                 </div>
             </div>

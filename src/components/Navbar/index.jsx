@@ -46,7 +46,7 @@ function Navbar() {
                     </a>
                 </div>
                 <a
-                    href="#contact"
+                    href="mailto:tombozafy.ianel@gmail.com"
                     className="lg:bg-indigo-500 hidden lg:block lg:hover:bg-indigo-800 lg:text-white lg:px-4 lg:py-2"
                 >
                     Contact Me
@@ -108,7 +108,7 @@ function Navbar() {
                     <a
                         onClick={() => setShowNav(false)}
                         className="py-3 hover:py-3 border-b-2 hover:w-full hover:text-center hover:bg-white hover:text-indigo-500 text-white border-b-transparent hover:border-b-white-500"
-                        href="#contact"
+                        href="mailto:tombozafy.ianel@gmail.com"
                     >
                         Contact Me
                     </a>
