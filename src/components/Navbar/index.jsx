@@ -8,6 +8,8 @@ function Navbar() {
         if (showNav) {
             document.body.style.overflowY = "hidden";
         }
+
+        document.body.style.overflowY = "unset";
     }, [showNav]);
 
     return (
@@ -19,17 +21,10 @@ function Navbar() {
                 </h1>
                 <div className="lg:flex hidden items-center gap-6">
                     <a
-                        onClick={() => setShowNav(false)}
                         className=" hover:text-indigo-500 border-b-2 border-b-transparent hover:border-b-indigo-500"
                         href="#home"
                     >
                         Home
-                    </a>
-                    <a
-                        className=" hover:text-indigo-500 border-b-2 border-b-transparent hover:border-b-indigo-500"
-                        href="#services"
-                    >
-                        Services
                     </a>
                     <a
                         className=" hover:text-indigo-500 border-b-2 border-b-transparent hover:border-b-indigo-500"
@@ -88,13 +83,6 @@ function Navbar() {
                         href="#home"
                     >
                         Home
-                    </a>
-                    <a
-                        onClick={() => setShowNav(false)}
-                        className="py-3 hover:py-3 border-b-2 hover:w-full hover:text-center hover:bg-white hover:text-indigo-500 text-white border-b-transparent hover:border-b-white-500"
-                        href="#services"
-                    >
-                        Services
                     </a>
                     <a
                         onClick={() => setShowNav(false)}

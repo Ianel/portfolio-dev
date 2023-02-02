@@ -4,7 +4,10 @@ import { hero } from "../../assets/images";
 
 function Hero() {
     return (
-        <section className="flex lg:flex-row flex-col my-4 lg:h-[85vh] justify-between items-center md:px-12">
+        <section
+            id="home"
+            className="flex lg:flex-row flex-col my-4 md:my-16 lg:h-[85vh] justify-between items-center md:px-12"
+        >
             <div className="lg:w-1/2 h-full bg-hero bg-center bg-cover bg-no-repeat">
                 <img
                     className="mx-auto object-cover rounded-full h-full drop-shadow-2xl"
