@@ -55,8 +55,6 @@ function Navbar() {
                     <button
                         className="lg:hidden transition-all transform"
                         onClick={() => {
-                            let body = document.getElementById("root");
-                            body.style.overflowY = "scroll";
                             setShowNav(false);
                         }}
                     >
@@ -66,8 +64,6 @@ function Navbar() {
                     <button
                         className="lg:hidden transition-all transform"
                         onClick={() => {
-                            let body = document.getElementById("root");
-                            body.style.overflowY = "hidden";
                             setShowNav(true);
                         }}
                     >
