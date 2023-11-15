@@ -11,25 +11,27 @@ function Projects() {
             <h3 className="text-center text-gray-700 text-md mb-8">
                 These are the projects that I have made with my skills
             </h3>
-            <div className="flex flex-col md:flex-row flex-wrap md:items-stretch my-10 justify-between items-start gap-4">
+            <div className="flex flex-col md:flex-row flex-wrap md:items-stretch my-10 justify-center items-start gap-4 lg:gap-6">
                 {projects.map((project) => {
                     return (
                         <div
                             key={project.id}
-                            className="shadow-lg w-full md:w-80"
+                            className="shadow-lg w-full md:w-80 cursor-pointer hover:shadow-indigo-500 hover:-translate-y-4 group rounded-xl hover:rounded-xl"
                         >
                             <img
-                                className="object-cover"
+                                className="object-cover rounded-t-xl"
                                 src={project.image}
                                 alt={project.title}
                             />
-                            <div className="p-6 h-[250px] flex flex-col justify-between">
-                                <h4 className="text-gray-800 font-semibold">
+                            <div className="p-6 h-[250px] flex flex-col justify-between group-hover:text-white group-hover:bg-indigo-600 group-hover:rounded-b-xl">
+                                <h4 className="text-gray-800 font-semibold group-hover:text-inherit">
                                     {project.title}
                                 </h4>
-                                <p className="py-2">{project.content}</p>
+                                <p className="py-2 text-gray-700 group-hover:text-inherit">
+                                    {project.content}
+                                </p>
                                 <p className="pb-2">
-                                    <span className="text-gray-600 underline font-medium">
+                                    <span className="text-gray-800 underline font-medium group-hover:text-inherit">
                                         Technology:{" "}
                                     </span>
                                     {project.technology}
