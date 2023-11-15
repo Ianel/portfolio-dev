@@ -7,9 +7,9 @@ function Navbar() {
     useEffect(() => {
         if (showNav) {
             document.body.style.overflowY = "hidden";
+        } else {
+            document.body.style.overflowY = "unset";
         }
-
-        document.body.style.overflowY = "unset";
     }, [showNav]);
 
     return (

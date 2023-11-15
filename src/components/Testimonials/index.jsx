@@ -4,7 +4,7 @@ import { marielle } from "../../assets/images";
 
 function Testimonials() {
     return (
-        <section id="testimonials" className="md:px-12 px-6 py-16 bg-slate-100">
+        <section id="testimonials" className="md:px-12 px-6 py-16 bg-[#eeeff2]">
             <h2 className="text-center text-indigo-500 font-bold text-2xl">
                 Testimonials
             </h2>
@@ -12,7 +12,7 @@ function Testimonials() {
                 These are the testimonials of people I've been working with
             </h3>
             <div className="flex justify-center items-center">
-                <article className="w-full md:w-80 shadow-lg p-5 bg-white">
+                <article className="w-full md:w-80 shadow-lg p-5 bg-white rounded-xl">
                     <div className="flex justify-between items-stretch pb-5">
                         <div>
                             <h3>Randrianjohany Marielle</h3>

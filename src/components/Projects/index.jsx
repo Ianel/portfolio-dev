@@ -11,12 +11,12 @@ function Projects() {
             <h3 className="text-center text-gray-700 text-md mb-8">
                 These are the projects that I have made with my skills
             </h3>
-            <div className="flex flex-col md:flex-row flex-wrap md:items-stretch my-10 justify-center items-start gap-4 lg:gap-6">
+            <div className="flex flex-col md:flex-row flex-wrap md:items-stretch my-10 justify-center items-start gap-8">
                 {projects.map((project) => {
                     return (
                         <div
                             key={project.id}
-                            className="shadow-lg w-full md:w-80 cursor-pointer hover:shadow-indigo-500 hover:-translate-y-4 group rounded-xl hover:rounded-xl"
+                            className="shadow-lg w-full md:w-80 cursor-pointer hover:shadow-indigo-500 hover:-translate-y-4 bg-[#ededf1] group rounded-xl hover:rounded-xl"
                         >
                             <img
                                 className="object-cover rounded-t-xl"
