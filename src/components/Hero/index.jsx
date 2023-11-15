@@ -1,6 +1,7 @@
 import React from "react";
 import { FaFacebook, FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 import { BgHero, hero, hero2, hero3, hero4 } from "../../assets/images";
+import resume from "../../assets/pdf/CV_Ianel_2023.pdf";
 
 function Hero() {
     return (
@@ -18,12 +19,20 @@ function Hero() {
                     together as we build your project. An idea ? We will make it
                     a reality. Feel free to get in touch with me.
                 </p>
-                <a
-                    href="mailto:tombozafy.ianel@gmail.com"
-                    className="bg-indigo-500 hover:bg-indigo-800 hover:transform hover:transition-all text-white rounded-full px-6 py-3 w-64 text-center"
-                >
-                    Contact Me
-                </a>
+                <div className="flex w-full md:flex-row flex-col justify-center items-stretch gap-4">
+                    <a
+                        href="mailto:tombozafy.ianel@gmail.com"
+                        className="bg-indigo-500 hover:bg-indigo-800 hover:transform hover:transition-all text-white rounded-full w-full px-6 py-3 text-center"
+                    >
+                        Contact Me
+                    </a>
+                    <a
+                        href={resume}
+                        className="border-indigo-500 text-indigo-500 border-2 hover:bg-indigo-800 hover:transform hover:transition-all hover:text-white rounded-full w-full px-6 py-3 text-center"
+                    >
+                        Download my resume
+                    </a>
+                </div>
                 {/* <img
                     className="mx-auto top-0 absolute object-cover h-full"
                     src={BgHero}
