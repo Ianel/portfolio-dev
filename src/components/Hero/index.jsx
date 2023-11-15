@@ -8,7 +8,7 @@ function Hero() {
             id="home"
             className="flex lg:flex-row flex-col my-4 md:my-16 lg:h-[60vh] justify-between items-center md:px-12"
         >
-            <div className="lg:w-1/2 h-full py-3 relative flex flex-col justify-center items-start gap-12">
+            <div className="lg:w-1/2 h-full px-6 md:px-0 py-3 relative flex flex-col justify-center items-start gap-12">
                 <h2 className="text-4xl font-bold text-gray-800">
                     Do you need a great product ?
                 </h2>
@@ -20,7 +20,7 @@ function Hero() {
                 </p>
                 <a
                     href="mailto:tombozafy.ianel@gmail.com"
-                    className="bg-indigo-500 text-white rounded-full px-6 py-3 w-64 text-center"
+                    className="bg-indigo-500 hover:bg-indigo-800 hover:transform hover:transition-all text-white rounded-full px-6 py-3 w-64 text-center"
                 >
                     Contact Me
                 </a>
