@@ -14,15 +14,15 @@ function Navbar() {
 
     return (
         <div className="relative">
-            <div className="sticky w-screen h-3 bg-indigo-500">
+            <div className="w-screen h-3 bg-indigo-500">
                 <div className="w-16 md:w-48 h-3 rounded-lg bg-black bg-clip-padding backdrop-blur-lg backdrop-filter opacity-50 animate-slideSmall md:animate-slideLarge"></div>
             </div>
 
-            <nav className="sticky z-10 flex items-center px-6 py-3 md:px-12 md:py-6">
+            <nav className="z-10 flex justify-between items-center px-6 py-3 md:px-12 md:py-6">
                 <h1 className="text-2xl font-semibold flex justify-start self-start">
-                    IT
+                    Ianel Tombozafy
                 </h1>
-                <div className="lg:flex hidden absolute left-1/2 -translate-x-1/2 items-center gap-6">
+                <div className="lg:flex hidden items-center gap-6">
                     <a
                         className="transform transition-all hover:text-indigo-500 border-b-2 border-b-transparent hover:border-b-indigo-500"
                         href="#home"
@@ -48,12 +48,12 @@ function Navbar() {
                         Testimonials
                     </a>
                 </div>
-                {/*  <a
-                    href="mailto:tombozafy.ianel@gmail.com"
-                    className="lg:bg-indigo-500 hidden lg:block lg:hover:bg-indigo-800 lg:text-white lg:px-4 lg:py-2"
+                <a
+                    href="tel:+261328178421"
+                    className="lg:border-indigo-500 border-2 hidden lg:block lg:hover:bg-indigo-800 hover:text-white text-indigo-600 lg:px-4 lg:py-2 hover:transform hover:transition-all"
                 >
-                    Contact Me
-                </a> */}
+                    +261 32 81 784 21
+                </a>
                 {showNav ? (
                     <button
                         className="lg:hidden absolute right-6 transition-all transform"
