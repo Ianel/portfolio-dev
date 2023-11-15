@@ -7,6 +7,9 @@ import doctor from "./doctor.png";
 import weatherly from "./weatherly.png";
 import movie from "./movie.png";
 import marielle from "./marielle.jpg";
+import hero2 from "./hero2.jpg";
+import hero3 from "./hero3.jpg";
+import hero4 from "./hero4.jpg";
 
 export {
     hero,
@@ -18,4 +21,7 @@ export {
     weatherly,
     movie,
     marielle,
+    hero2,
+    hero3,
+    hero4,
 };
