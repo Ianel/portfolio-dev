@@ -4,15 +4,18 @@ import { marielle } from "../../assets/images";
 
 function Testimonials() {
     return (
-        <section id="testimonials" className="md:px-12 px-6 py-16 bg-[#eeeff2]">
+        <section
+            id="testimonials"
+            className="md:px-12 px-6 py-16 bg-[#eeeff2] dark:bg-secondary-dark dark:text-white-dark"
+        >
             <h2 className="text-center text-indigo-500 font-bold text-2xl">
                 Testimonials
             </h2>
-            <h3 className="text-center text-gray-700 text-md mb-8">
+            <h3 className="text-center text-gray-700 dark:text-inherit text-md mb-8">
                 These are the testimonials of people I've been working with
             </h3>
             <div className="flex justify-center items-center">
-                <article className="w-full md:w-80 shadow-lg p-5 bg-white rounded-xl">
+                <article className="w-full md:w-80 shadow-lg p-5 bg-white dark:bg-primary-dark dark:text-inherit rounded-xl">
                     <div className="flex justify-between items-stretch pb-5">
                         <div>
                             <h3>Randrianjohany Marielle</h3>

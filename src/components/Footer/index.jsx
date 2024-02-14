@@ -3,7 +3,7 @@ import { FaEnvelope, FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 
 function Footer() {
     return (
-        <footer className="flex flex-col lg:flex-row lg:justify-between px-6 lg:px-12 items-center gap-4 py-10 shadow-inv">
+        <footer className="dark:bg-primary-dark dark:text-white-dark flex flex-col lg:flex-row lg:justify-between px-6 lg:px-12 items-center gap-4 py-10 shadow-inv">
             <div className="order-2 lg:order-1">
                 &copy; Copyright {new Date(Date.now()).getFullYear()} - All
                 rigths reserved

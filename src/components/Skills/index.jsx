@@ -3,7 +3,10 @@ import { skills } from "../../data";
 
 function Skills() {
     return (
-        <section id="skills" className="md:px-12 px-6 py-16 bg-[#eeeff2]">
+        <section
+            id="skills"
+            className="md:px-12 px-6 py-16 bg-[#eeeff2] dark:bg-secondary-dark dark:text-white-dark"
+        >
             <h2 className="text-center text-indigo-500 font-bold text-2xl">
                 Skills
             </h2>
@@ -16,12 +19,12 @@ function Skills() {
                     return (
                         <div
                             key={skill.id}
-                            className="shadow-lg rounded-xl w-full md:w-64 p-6 bg-white group hover:bg-indigo-600 hover:transform hover:transition-all hover:-translate-y-4"
+                            className="shadow-lg rounded-xl w-full md:w-64 p-6 bg-white group dark:text-white-dark dark:bg-primary-dark dark:hover:bg-indigo-600 hover:bg-indigo-600 hover:transform hover:transition-all hover:-translate-y-4"
                         >
-                            <h4 className="text-gray-800 font-semibold mb-4 group-hover:text-white">
+                            <h4 className="text-gray-800 dark:text-inherit font-semibold mb-4 group-hover:text-white">
                                 {skill.title}
                             </h4>
-                            <p className="text-gray-700 group-hover:text-white">
+                            <p className="text-gray-700 dark:text-inherit group-hover:text-white">
                                 {skill.content}
                             </p>
                         </div>

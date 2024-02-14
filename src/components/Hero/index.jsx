@@ -1,19 +1,19 @@
 import React from "react";
 import { FaFacebook, FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 import { BgHero, hero, hero2, hero3, hero4 } from "../../assets/images";
-import resume from "../../assets/pdf/CV_Ianel_2023.pdf";
+import resume from "../../assets/pdf/CV_Ianel_DevReact.pdf";
 
 function Hero() {
     return (
         <section
             id="home"
-            className="flex lg:flex-row flex-col my-4 md:my-16 lg:h-[60vh] justify-between items-center md:px-12"
+            className="dark:bg-primary-dark dark:text-white-dark flex lg:flex-row flex-col py-4 md:py-16 lg:h-[80vh] justify-between items-center md:px-12"
         >
             <div className="lg:w-1/2 h-full px-6 md:px-0 py-3 relative flex flex-col justify-center items-start gap-12">
-                <h2 className="text-4xl font-bold text-gray-800">
+                <h2 className="text-4xl font-bold text-gray-800 dark:text-white-dark">
                     Do you need a great product ?
                 </h2>
-                <p className="text-gray-700">
+                <p className="text-gray-700 dark:bg-primary-dark dark:text-white-dark">
                     I am here to give you the best products and services
                     according to your need. We will go through the process
                     together as we build your project. An idea ? We will make it
