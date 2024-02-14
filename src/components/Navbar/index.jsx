@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { FaBars, FaMoon, FaSun, FaTimes } from "react-icons/fa";
+import Switcher from "../Switcher";
 
 function Navbar() {
     const [showNav, setShowNav] = useState(false);
@@ -72,7 +73,7 @@ function Navbar() {
                     </a>
                 </div>
                 <div className="flex relative items-center gap-4">
-                    <button
+                    {/*  <button
                         className="dark:flex hidden hover:text-primary-dark p-2 hover:rounded-full hover:bg-gray-300 hover:transform hover:transition-all absolute lg:right-0 right-10 lg:relative"
                         onClick={handleToggleTheme}
                     >
@@ -84,8 +85,10 @@ function Navbar() {
                         onClick={handleToggleTheme}
                     >
                         <FaMoon />
-                    </button>
-
+                    </button> */}
+                    <Switcher
+                        className={"absolute right-8 lg:relative lg:right-0"}
+                    />
                     <a
                         href="tel:+261328178421"
                         className="rounded-full lg:border-indigo-500 border-2 hidden lg:block lg:hover:bg-indigo-800 hover:text-white text-indigo-600 lg:px-4 lg:py-2 hover:transform hover:transition-all"
