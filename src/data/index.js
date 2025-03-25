@@ -5,6 +5,10 @@ import {
     rick,
     upstrack,
     weatherly,
+    portfolioWp,
+    movieflix,
+    endict,
+    gotQuotes,
 } from "../assets/images";
 
 export const skills = [
@@ -34,24 +38,30 @@ export const skills = [
     },
     {
         id: 5,
+        title: "Next JS",
+        content:
+            "A React framework that helps build static and dynamic websites",
+    },
+    {
+        id: 6,
         title: "Typescript",
         content:
             "A superset of Javascript that helps writting and reading code easier",
     },
     {
-        id: 6,
+        id: 7,
         title: "Tailwind CSS",
         content:
             "A CSS framework that accelerate the development cycle by providing utility classes",
     },
     {
-        id: 7,
+        id: 8,
         title: "Git",
         content:
             "A version control tool that makes collaboration inside a team fluid and easy",
     },
     {
-        id: 8,
+        id: 9,
         title: "Visual Studio Code",
         content:
             "An editor that works with almost every language that exists. Lightweight, free and simple to use",
@@ -114,5 +124,42 @@ export const projects = [
         technology: "React JS, Tailwind CSS, Typescript, Vite",
         github_url: "https://github.com/Ianel/movie-finder",
         live_url: "https://movie-finder-ian.vercel.app",
+    },
+    {
+        id: 7,
+        image: portfolioWp,
+        title: "Portfolio SAYNA",
+        content: "My WordPress portfolio",
+        technology: "WordPress, Elementor, Blocksy",
+        github_url: "N/A",
+        live_url: "http://portfolio-ianel.infinityfreeapp.com",
+    },
+    {
+        id: 8,
+        image: movieflix,
+        title: "Movie Flix",
+        content: "A web app that allows to browse movies",
+        technology: "Next JS, Tailwind CSS, Typescript",
+        github_url: "https://github.com/Ianel/movieflix",
+        live_url: "https://movieflix-ian.vercel.app",
+    },
+    {
+        id: 9,
+        image: endict,
+        title: "English Dictionary",
+        content: "A simple web app that allows you to search for English words",
+        technology: "Next JS, Tailwind CSS, Typescript",
+        github_url: "https://github.com/Ianel/en-dictionary",
+        live_url: "https://en-dictionary-black.vercel.app",
+    },
+    {
+        id: 10,
+        image: gotQuotes,
+        title: "Game of Thrones Quotes",
+        content:
+            "A simple web app that displays random quotes from Game of Thrones",
+        technology: "HTML5, CSS3, JS",
+        github_url: "https://github.com/Ianel/got_quotes",
+        live_url: "https://got-quote.netlify.app",
     },
 ];

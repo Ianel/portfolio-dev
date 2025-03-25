@@ -1,7 +1,7 @@
 import React from "react";
 import { FaFacebook, FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 import { BgHero, hero, hero2, hero3, hero4 } from "../../assets/images";
-import resume from "../../assets/pdf/CV_Ianel_DevReact.pdf";
+import resume from "../../assets/pdf/CV_Ianel_DevFront_2025.pdf";
 
 function Hero() {
     return (
