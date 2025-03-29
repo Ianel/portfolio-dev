@@ -9,6 +9,7 @@ import {
     movieflix,
     endict,
     gotQuotes,
+    nasaProject,
 } from "../assets/images";
 
 export const skills = [
@@ -158,8 +159,18 @@ export const projects = [
         title: "Game of Thrones Quotes",
         content:
             "A simple web app that displays random quotes from Game of Thrones",
-        technology: "HTML5, CSS3, JS",
+        technology: "HTML5, CSS3, Vanilla JS",
         github_url: "https://github.com/Ianel/got_quotes",
         live_url: "https://got-quote.netlify.app",
+    },
+    {
+        id: 11,
+        image: nasaProject,
+        title: "NASA APIs",
+        content:
+            "A simple web app that allows you to get pictures from NASA API",
+        technology: "HTML5, CSS3, Vanilla JS",
+        github_url: "https://github.com/Ianel/nasa-project-frontend",
+        live_url: "https://nasa-project-ian.netlify.app/",
     },
 ];

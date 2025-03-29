@@ -14,6 +14,7 @@ import portfolioWp from "./portfolio-wp.png";
 import movieflix from "./movie-flix.png";
 import endict from "./en-dict.png";
 import gotQuotes from "./got-quotes.png";
+import nasaProject from "./nasa-project.png";
 
 export {
     hero,
@@ -32,4 +33,5 @@ export {
     movieflix,
     endict,
     gotQuotes,
+    nasaProject,
 };
