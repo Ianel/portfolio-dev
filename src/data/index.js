@@ -5,6 +5,7 @@ import {
     rick,
     upstrack,
     weatherly,
+    ophiris
 } from "../assets/images";
 
 export const skills = [
@@ -115,4 +116,13 @@ export const projects = [
         github_url: "https://github.com/Ianel/movie-finder",
         live_url: "https://movie-finder-ian.vercel.app",
     },
+    {
+        id: 7,
+        image: ophiris,
+        title: "Ophir International Services",
+        content: "A tour operator website for a professional client",
+        technology: "Next JS, Tailwind CSS, Vite",
+        github_url: "https://github.com/Ianel/ophiris",
+        live_url: "https://ophiris.com",
+    }
 ];

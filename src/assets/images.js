@@ -10,6 +10,7 @@ import marielle from "./marielle.jpg";
 import hero2 from "./hero2.jpg";
 import hero3 from "./hero3.jpg";
 import hero4 from "./hero4.jpg";
+import ophiris from "./ophiris.png";
 
 export {
     hero,
@@ -24,4 +25,5 @@ export {
     hero2,
     hero3,
     hero4,
+    ophiris
 };
