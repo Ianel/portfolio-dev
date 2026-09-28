@@ -1,13 +1,338 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <link rel="icon" type="image/svg+xml" href="/logo.png" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Portfolio</title>
-    </head>
-    <body>
-        <div id="root"></div>
-        <script type="module" src="/src/main.jsx"></script>
-    </body>
+<!doctype html>
+<html lang="fr" class="scroll-smooth">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ianel Tombozafy — Développeur Web</title>
+  <meta name="description" content="Portfolio de Ianel Tombozafy, développeur Web diplômé en génie informatique, créateur de solutions modernes, fiables et centrées sur les utilisateurs.">
+  <meta name="author" content="Ianel Tombozafy">
+  <meta name="theme-color" content="#1d4ed8">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://portfolio-ianel.vercel.app/">
+  <link rel="preconnect" href="https://cdn.tailwindcss.com" crossorigin>
+  <link rel="preconnect" href="https://avatars.githubusercontent.com" crossorigin>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%231d4ed8'/%3E%3Cpath d='M18 18h10v28H18zm18 0h10v28H36z' fill='white'/%3E%3Ccircle cx='32' cy='32' r='5' fill='%239ec5ff'/%3E%3C/svg%3E">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { ink: '#0b1736', panel: '#ffffff', electric: '#1d4ed8', energy: '#1d4ed8', mist: '#526079', cloud: '#f6f8fc', line: '#dde4f0', sky: '#dce7ff' },
+          fontFamily: { sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'] },
+          boxShadow: { glow: '0 24px 70px rgba(29,78,216,.16)' }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Ianel Tombozafy",
+    "jobTitle": "Développeur Web",
+    "url": "https://portfolio-ianel.vercel.app/",
+    "email": "mailto:tombozafy.ianel@gmail.com",
+    "telephone": "+261328178421",
+    "sameAs": [
+      "https://github.com/Ianel",
+      "https://www.linkedin.com/in/ianel-tombozafy",
+      "https://web.facebook.com/ianel.tombozafy"
+    ],
+    "knowsAbout": ["HTML5", "CSS3", "JavaScript", "React", "WordPress", "Node.js", "Express.js", "SQL", "NoSQL", "Git", "GitHub"]
+  }
+  </script>
+</head>
+<body class="bg-cloud text-ink antialiased selection:bg-energy selection:text-white">
+  <a href="#main" class="skip-link" data-i18n="skipContent">Aller au contenu</a>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="fixed inset-x-0 top-0 z-50 border-b border-line bg-white/85 backdrop-blur-xl">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8" aria-label="Navigation principale" data-i18n-aria="navLabel">
+      <a href="#accueil" class="group flex items-center gap-3" aria-label="Ianel Tombozafy — accueil" data-i18n-aria="homeLabel">
+        <span class="grid h-10 w-10 place-items-center rounded-xl bg-energy font-black tracking-tight text-white shadow-lg shadow-blue-700/15 transition group-hover:-translate-y-0.5">IT</span>
+        <span class="hidden text-sm font-semibold tracking-wide sm:block">Ianel Tombozafy</span>
+      </a>
+      <div class="hidden items-center gap-6 text-sm text-mist lg:flex">
+        <a class="nav-link" href="#a-propos" data-i18n="navAbout">À propos</a>
+        <a class="nav-link" href="#projets" data-i18n="navProjects">Projets</a>
+        <a class="nav-link" href="#competences" data-i18n="navSkills">Compétences</a>
+        <a class="nav-link" href="#parcours" data-i18n="navJourney">Parcours</a>
+        <a class="nav-link" href="#temoignages" data-i18n="navTestimonial">Témoignage</a>
+      </div>
+      <div class="flex items-center gap-3">
+        <div class="language-switch" role="group" aria-label="Langue / Language">
+          <button type="button" data-lang="fr" aria-pressed="true">FR</button>
+          <button type="button" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+        <a href="mailto:tombozafy.ianel@gmail.com" class="hidden rounded-full bg-energy px-5 py-2.5 text-sm font-bold text-white transition hover:-translate-y-0.5 hover:bg-blue-800 hover:shadow-[0_12px_34px_rgba(29,78,216,.22)] sm:inline-flex" data-i18n="talkProject">Parlons de votre projet</a>
+        <button id="menu-button" class="grid h-11 w-11 place-items-center rounded-full border border-line bg-white lg:hidden" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Ouvrir le menu">
+          <span class="menu-lines" aria-hidden="true"></span>
+        </button>
+      </div>
+    </nav>
+    <div id="mobile-menu" class="hidden border-t border-line bg-white px-5 py-5 lg:hidden">
+      <div class="grid gap-1 text-lg">
+        <a class="mobile-link" href="#a-propos" data-i18n="navAbout">À propos</a>
+        <a class="mobile-link" href="#projets" data-i18n="navProjects">Projets</a>
+        <a class="mobile-link" href="#competences" data-i18n="navSkills">Compétences</a>
+        <a class="mobile-link" href="#parcours" data-i18n="navJourney">Parcours</a>
+        <a class="mobile-link" href="#temoignages" data-i18n="navTestimonial">Témoignage</a>
+        <a class="mobile-link text-energy" href="#contact" data-i18n="navContact">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="accueil" class="relative flex min-h-screen items-center overflow-hidden pt-28">
+      <div class="hero-orb hero-orb-one" aria-hidden="true"></div>
+      <div class="hero-orb hero-orb-two" aria-hidden="true"></div>
+      <div class="mx-auto grid w-full max-w-7xl items-center gap-14 px-5 py-16 lg:grid-cols-[1.1fr_.9fr] lg:px-8 lg:py-24">
+        <div class="relative z-10" data-reveal>
+          <div class="mb-7 inline-flex items-center gap-2 rounded-full border border-energy/20 bg-sky px-4 py-2 text-sm font-semibold text-energy">
+            <span class="h-2 w-2 rounded-full bg-energy"></span>
+            <span data-i18n="available">Ouvert aux collaborations ambitieuses</span>
+          </div>
+          <p class="mb-4 text-sm font-bold uppercase tracking-[.3em] text-electric" data-i18n="heroRole">Développeur Web · Génie informatique</p>
+          <h1 class="max-w-4xl text-balance text-5xl font-black leading-[.94] tracking-[-.055em] sm:text-7xl lg:text-[6.5rem]" data-i18n="heroTitle">
+            Je transforme les idées en <span class="gradient-text">expériences vivantes.</span>
+          </h1>
+          <p class="mt-7 max-w-2xl text-lg leading-8 text-mist sm:text-xl" data-i18n="heroBody">Je suis <strong class="font-semibold text-ink">Ianel Tombozafy</strong>, diplômé en génie informatique et passionné de sciences et de technologies. Je conçois des solutions web fiables, utiles et soignées, pensées pour les besoins réels des utilisateurs.</p>
+          <div class="mt-9 flex flex-col gap-3 sm:flex-row">
+            <a href="#projets" class="button-primary"><span data-i18n="viewProjects">Voir mes projets</span> <span aria-hidden="true">↘</span></a>
+            <a href="#a-propos" class="button-secondary" data-i18n="discover">Découvrir mon univers</a>
+          </div>
+          <blockquote class="mt-10 border-l-2 border-energy pl-5 text-base italic text-ink/75" data-i18n="quote">« Il faut vouloir le faire pour pouvoir le faire. »</blockquote>
+        </div>
+
+        <div class="relative mx-auto w-full max-w-lg lg:justify-self-end" data-reveal>
+          <div class="portrait-shell">
+            <div class="portrait-grid" aria-hidden="true"></div>
+            <img src="https://avatars.githubusercontent.com/u/48760301?v=4" alt="Portrait de Ianel Tombozafy" data-i18n-alt="portraitAlt" width="460" height="460" fetchpriority="high" class="portrait-image">
+            <div class="absolute -left-4 bottom-10 z-20 rounded-2xl border border-line bg-white/90 p-4 text-ink shadow-2xl backdrop-blur-xl sm:-left-10">
+              <p class="text-xs uppercase tracking-[.22em] text-electric" data-i18n="missionLabel">Ma mission</p>
+              <p class="mt-1 max-w-52 font-semibold" data-i18n="missionText">Vous aider à atteindre vos objectifs — et vous donner de la joie.</p>
+            </div>
+            <div class="absolute -right-3 top-10 rotate-2 rounded-xl bg-energy px-4 py-3 text-sm font-black text-white shadow-xl shadow-blue-800/20 sm:-right-8" data-i18n="scienceCreativity">SCIENCE × CRÉATIVITÉ</div>
+          </div>
+        </div>
+      </div>
+      <a href="#a-propos" class="absolute bottom-7 left-1/2 hidden -translate-x-1/2 items-center gap-3 text-xs uppercase tracking-[.26em] text-mist md:flex"><span class="h-px w-12 bg-ink/20"></span><span data-i18n="explore">Explorer</span></a>
+    </section>
+
+    <section id="a-propos" class="section-space border-t border-line bg-white">
+      <div class="mx-auto max-w-7xl px-5 lg:px-8">
+        <div class="grid gap-12 lg:grid-cols-[.75fr_1.25fr] lg:gap-24">
+          <div data-reveal>
+            <p class="eyebrow" data-i18n="aboutEyebrow">01 — À propos</p>
+            <h2 class="section-title" data-i18n="aboutTitle">Une tête dans la tech.<br><span class="text-mist">Le cœur dans l’humain.</span></h2>
+          </div>
+          <div class="space-y-6 text-lg leading-8 text-mist" data-reveal>
+            <p data-i18n="aboutP1">Curieux par nature, j’aime comprendre comment les choses fonctionnent, relier les idées et apprendre en construisant. Le web est pour moi un terrain où logique, esthétique et impact humain se rencontrent.</p>
+            <p data-i18n="aboutP2">Je ne cherche pas seulement à livrer une interface. Je veux écouter, clarifier le besoin, simplifier l’expérience et créer quelque chose dont nous pouvons être fiers ensemble.</p>
+          </div>
+        </div>
+
+        <div class="mt-16 grid gap-6 lg:grid-cols-2">
+          <article class="soft-card" data-reveal>
+            <span class="card-index">A</span>
+            <h3 class="text-2xl font-bold" data-i18n="qualitiesTitle">Mes qualités</h3>
+            <div class="mt-8 flex flex-wrap gap-3">
+              <span class="pill" data-i18n="qualityCurious">Curieux</span><span class="pill" data-i18n="qualityPersistent">Persévérant</span><span class="pill" data-i18n="qualityOpen">Ouvert d’esprit</span><span class="pill" data-i18n="qualitySerious">Sérieux</span><span class="pill" data-i18n="qualityCommitted">Collant <span class="text-energy">*</span></span><span class="pill" data-i18n="qualityAuthentic">Authentique</span>
+            </div>
+            <p class="mt-7 text-sm leading-6 text-mist" data-i18n="qualityNote"><span class="text-energy">*</span> Dans le bon sens : présent, impliqué et fidèle au projet jusqu’au bout.</p>
+          </article>
+          <article class="soft-card" data-reveal>
+            <span class="card-index">B</span>
+            <h3 class="text-2xl font-bold" data-i18n="valuesTitle">Mes valeurs</h3>
+            <div class="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-5 lg:grid-cols-2 xl:grid-cols-5">
+              <span class="value-chip" data-i18n="valueRespect">Respect</span><span class="value-chip" data-i18n="valueIntegrity">Intégrité</span><span class="value-chip" data-i18n="valueHumility">Humilité</span><span class="value-chip" data-i18n="valueMutualAid">Entraide</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projets" class="section-space bg-white/[.025]">
+      <div class="mx-auto max-w-7xl px-5 lg:px-8">
+        <div class="flex flex-col justify-between gap-8 md:flex-row md:items-end" data-reveal>
+          <div>
+            <p class="eyebrow" data-i18n="projectsEyebrow">02 — Sélection</p>
+            <h2 class="section-title" data-i18n="projectsTitle">Des projets qui<br><span class="gradient-text">font leurs preuves.</span></h2>
+          </div>
+          <p class="max-w-md text-lg leading-8 text-mist" data-i18n="projectsIntro">Applications, vitrines et produits clients : chaque projet est une occasion de rendre une idée plus claire, plus utile et plus belle.</p>
+        </div>
+
+        <div class="mt-14 grid gap-5 lg:grid-cols-2">
+          <article class="project-card project-featured" data-reveal>
+            <div class="project-topline"><span data-i18n="clientProject">Projet client</span><span>01</span></div>
+            <div class="project-visual project-visual-ophir"><span class="text-6xl" aria-hidden="true">✦</span><span class="font-black tracking-[.25em]">OPHIRIS</span></div>
+            <div class="p-6 sm:p-8">
+              <h3 class="text-3xl font-black">Ophir International Services</h3>
+              <p class="mt-3 text-mist" data-i18n="ophirDescription">Site professionnel pour un tour opérateur : une présence digitale claire, immersive et orientée découverte.</p>
+              <div class="mt-6 flex flex-wrap gap-2"><span class="tech">Next.js</span><span class="tech">Tailwind CSS</span><span class="tech">Vite</span></div>
+              <div class="mt-8 flex gap-5 text-sm font-bold"><a class="project-link" href="https://ophiris.com/" target="_blank" rel="noopener noreferrer"><span data-i18n="viewSite">Voir le site</span> ↗</a><a class="project-link muted" href="https://github.com/Ianel/ophiris" target="_blank" rel="noopener noreferrer"><span data-i18n="sourceCode">Code source</span> ↗</a></div>
+            </div>
+          </article>
+
+          <article class="project-card" data-reveal>
+            <div class="project-topline"><span data-i18n="webApp">Application web</span><span>02</span></div>
+            <div class="project-visual project-visual-weather"><span class="text-6xl" aria-hidden="true">☼</span><span class="font-black tracking-[.25em]">WEATHERLY</span></div>
+            <div class="p-6 sm:p-8">
+              <h3 class="text-3xl font-black">Weatherly</h3>
+              <p class="mt-3 text-mist" data-i18n="weatherDescription">Une application météo rapide pour obtenir les informations essentielles d’une ville en quelques instants.</p>
+              <div class="mt-6 flex flex-wrap gap-2"><span class="tech">React</span><span class="tech">TypeScript</span><span class="tech">Tailwind CSS</span><span class="tech">Vite</span></div>
+              <div class="mt-8 flex gap-5 text-sm font-bold"><a class="project-link" href="https://weatherly-ian.netlify.app/" target="_blank" rel="noopener noreferrer"><span data-i18n="viewSite">Voir le site</span> ↗</a><a class="project-link muted" href="https://github.com/Ianel/weatherly" target="_blank" rel="noopener noreferrer"><span data-i18n="sourceCode">Code source</span> ↗</a></div>
+            </div>
+          </article>
+
+          <article class="project-card" data-reveal>
+            <div class="project-topline"><span data-i18n="apiExploration">Exploration d’API</span><span>03</span></div>
+            <div class="project-visual project-visual-rick"><span class="text-6xl" aria-hidden="true">◉</span><span class="font-black tracking-[.22em]">RICK & MORTY</span></div>
+            <div class="p-6 sm:p-8">
+              <h3 class="text-3xl font-black">Rick and Morty</h3>
+              <p class="mt-3 text-mist" data-i18n="rickDescription">Une interface d’exploration des épisodes, personnages et dimensions de la série culte.</p>
+              <div class="mt-6 flex flex-wrap gap-2"><span class="tech">React</span><span class="tech">Tailwind CSS</span><span class="tech">Vite</span></div>
+              <div class="mt-8 flex gap-5 text-sm font-bold"><a class="project-link" href="https://rick-and-morty-ian.netlify.app/" target="_blank" rel="noopener noreferrer"><span data-i18n="viewSite">Voir le site</span> ↗</a><a class="project-link muted" href="https://github.com/Ianel/rick-and-morty" target="_blank" rel="noopener noreferrer"><span data-i18n="sourceCode">Code source</span> ↗</a></div>
+            </div>
+          </article>
+
+          <article class="project-card" data-reveal>
+            <div class="project-topline"><span data-i18n="movieSearch">Recherche cinéma</span><span>04</span></div>
+            <div class="project-visual project-visual-movie"><span class="text-6xl" aria-hidden="true">◍</span><span class="font-black tracking-[.25em]">MOVIE FINDER</span></div>
+            <div class="p-6 sm:p-8">
+              <h3 class="text-3xl font-black">Movie Finder</h3>
+              <p class="mt-3 text-mist" data-i18n="movieDescription">Une application de recherche simple et efficace pour retrouver rapidement les informations d’un film.</p>
+              <div class="mt-6 flex flex-wrap gap-2"><span class="tech">React</span><span class="tech">TypeScript</span><span class="tech">Tailwind CSS</span><span class="tech">Vite</span></div>
+              <div class="mt-8 flex gap-5 text-sm font-bold"><a class="project-link" href="https://movie-finder-ian.vercel.app/" target="_blank" rel="noopener noreferrer"><span data-i18n="viewSite">Voir le site</span> ↗</a><a class="project-link muted" href="https://github.com/Ianel/movie-finder" target="_blank" rel="noopener noreferrer"><span data-i18n="sourceCode">Code source</span> ↗</a></div>
+            </div>
+          </article>
+        </div>
+
+        <details class="mt-6 rounded-3xl border border-line bg-white p-6 shadow-sm" data-reveal>
+          <summary class="cursor-pointer list-none text-center font-bold text-energy"><span data-i18n="moreProjects">Voir 3 projets supplémentaires</span> <span aria-hidden="true">＋</span></summary>
+          <div class="mt-7 grid gap-4 md:grid-cols-3">
+            <a class="mini-project" href="https://upstrack.netlify.app/" target="_blank" rel="noopener noreferrer"><span class="text-sm text-mist" data-i18n="landingPage">Landing page</span><strong>Upstrack</strong><span>React · Tailwind · Vite ↗</span></a>
+            <a class="mini-project" href="https://bijoux-fantaisistes-artistiques.netlify.app/" target="_blank" rel="noopener noreferrer"><span class="text-sm text-mist" data-i18n="craftSite">Site artisanal</span><strong>Bijoux Fantaisistes Artistiques</strong><span>HTML5 · CSS3 ↗</span></a>
+            <a class="mini-project" href="https://doctor-web-app.netlify.app/" target="_blank" rel="noopener noreferrer"><span class="text-sm text-mist" data-i18n="healthLanding">Landing page santé</span><strong>Doctor Web App</strong><span>React · Tailwind ↗</span></a>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <section id="competences" class="section-space">
+      <div class="mx-auto max-w-7xl px-5 lg:px-8">
+        <div class="grid gap-14 lg:grid-cols-[.8fr_1.2fr] lg:gap-24">
+          <div data-reveal>
+            <p class="eyebrow" data-i18n="skillsEyebrow">03 — Compétences</p>
+            <h2 class="section-title" data-i18n="skillsTitle">Une base solide.<br><span class="text-mist">Un profil polyvalent.</span></h2>
+            <p class="mt-6 max-w-md text-lg leading-8 text-mist" data-i18n="skillsIntro">Mon parcours combine développement Web, gestion de contenu, données et support informatique. Les niveaux ci-contre reprennent ceux de mon CV.</p>
+          </div>
+          <div class="skills-grid" data-reveal>
+            <article class="skill-card">
+              <div class="skill-card-head"><span>Front-end</span><span>01</span></div>
+              <div class="skill-item"><strong>HTML5, CSS3, Vanilla JS</strong><small data-i18n="intermediate">Intermédiaire</small></div>
+              <div class="skill-item"><strong>React JS</strong><small data-i18n="intermediate">Intermédiaire</small></div>
+            </article>
+            <article class="skill-card">
+              <div class="skill-card-head"><span>CMS & back-end</span><span>02</span></div>
+              <div class="skill-item"><strong>WordPress</strong><small data-i18n="intermediate">Intermédiaire</small></div>
+              <div class="skill-item"><strong>Node.js, Express.js</strong><small data-i18n="basic">Basique</small></div>
+            </article>
+            <article class="skill-card">
+              <div class="skill-card-head"><span data-i18n="dataTools">Données & outils</span><span>03</span></div>
+              <div class="skill-item"><strong>SQL, NoSQL</strong><small data-i18n="intermediate">Intermédiaire</small></div>
+              <div class="skill-item"><strong>Git, GitHub</strong><small data-i18n="basic">Basique</small></div>
+            </article>
+            <div class="skill-ecosystem">
+              <span data-i18n="projectEcosystem">Écosystème de projets</span>
+              <div><strong>TypeScript</strong><strong>Tailwind CSS</strong><strong>Next.js</strong><strong>Vite</strong></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="parcours" class="section-space border-y border-line bg-white">
+      <div class="mx-auto max-w-7xl px-5 lg:px-8">
+        <div data-reveal>
+          <p class="eyebrow" data-i18n="journeyEyebrow">04 — Parcours</p>
+          <h2 class="section-title" data-i18n="journeyTitle">De la formation<br><span class="gradient-text">à l’expérience terrain.</span></h2>
+        </div>
+        <div class="mt-14 timeline">
+          <article class="journey-card" data-reveal>
+            <div><p class="journey-label">04/2025 — 07/2025</p><h3 data-i18n="designLead">Responsable design</h3><span>Madagasy.com</span></div>
+            <p data-i18n="madagasyDescription">Amélioration du design du site existant, organisation des contenus avec WordPress et support informatique aux employés.</p>
+          </article>
+          <article class="journey-card" data-reveal>
+            <div><p class="journey-label">10/2024 — 01/2025</p><h3 data-i18n="itIntern">Stagiaire en informatique</h3><span>BSAE</span></div>
+            <p data-i18n="bsaeDescription">Conception et intégration de sites avec WordPress, support technique et formation d’étudiants dans le domaine informatique.</p>
+          </article>
+          <article class="journey-card" data-reveal>
+            <div><p class="journey-label">09/2023 — 10/2023</p><h3 data-i18n="developerConsultant">Consultant développeur</h3><span>Spoon Consulting Ltd</span></div>
+            <p data-i18n="spoonDescription">Traitement de données pour l’aide à la décision, assistance sur Oracle Fusion Cloud ERP et automatisation de processus de données.</p>
+          </article>
+        </div>
+
+        <div class="mt-16" data-reveal>
+          <h3 class="mb-6 text-2xl font-bold" data-i18n="educationTitle">Formations</h3>
+          <div class="education-grid">
+            <article><span>2019 — 2022</span><h4 data-i18n="computerScienceDegree">Licence en génie informatique</h4><p data-i18n="degreeDescription">ISSTM · Programmation, algorithmique, bases de données et systèmes d’information.</p></article>
+            <article><span>2015 — 2017</span><h4 data-i18n="scienceBac">Baccalauréat série scientifique</h4><p data-i18n="bacDescription">Lycée Saint Gabriel · Fondations scientifiques avancées.</p></article>
+          </div>
+        </div>
+
+        <div class="mt-16 grid gap-12 lg:grid-cols-2">
+          <div data-reveal>
+            <h3 class="mb-6 text-2xl font-bold" data-i18n="languagesTitle">Langues</h3>
+            <div class="grid gap-4 sm:grid-cols-3">
+              <div class="language-card"><strong>Malagasy</strong><span data-i18n="native">Natif</span></div>
+              <div class="language-card"><strong data-i18n="french">Français</strong><span data-i18n="fluent">Courant</span></div>
+              <div class="language-card"><strong data-i18n="english">Anglais</strong><span data-i18n="intermediate">Intermédiaire</span></div>
+            </div>
+          </div>
+          <div data-reveal>
+            <h3 class="mb-6 text-2xl font-bold" data-i18n="passionsTitle">Passions</h3>
+            <div class="passion-cloud"><span>Football</span><span data-i18n="technology">Technologies</span><span>Science</span><span data-i18n="arts">Arts</span><span data-i18n="metaphysics">Métaphysique</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="temoignages" class="section-space">
+      <div class="mx-auto max-w-6xl px-5 lg:px-8">
+        <p class="eyebrow text-center" data-i18n="testimonialEyebrow">05 — Témoignage</p>
+        <figure class="testimonial" data-reveal>
+          <span class="quote-mark" aria-hidden="true">“</span>
+          <blockquote data-i18n="testimonialQuote">Premièrement, le site a permis à ma page d’être visible et d’attirer une cible potentielle plus vaste. Il a aussi professionnalisé l’image de mon produit.</blockquote>
+          <figcaption><strong>Randrianjohany Marielle</strong><span data-i18n="testimonialRole">CEO · Accessoires et déco bohème</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="contact" class="px-5 pb-5 lg:px-8 lg:pb-8">
+      <div class="contact-panel mx-auto max-w-7xl" data-reveal>
+        <div class="relative z-10 max-w-4xl">
+          <p class="eyebrow !text-white/70" data-i18n="contactEyebrow">06 — Contact</p>
+          <h2 class="text-balance text-5xl font-black leading-[.95] tracking-[-.05em] text-white sm:text-7xl" data-i18n="contactTitle">Une idée en tête ?<br>Faisons-la exister.</h2>
+          <p class="mt-6 max-w-xl text-lg leading-8 text-white/75" data-i18n="contactIntro">Racontez-moi votre objectif. Nous trouverons ensemble la façon la plus simple, solide et créative de le transformer en produit.</p>
+          <a href="mailto:tombozafy.ianel@gmail.com" class="mt-8 inline-flex items-center gap-3 rounded-full bg-white px-6 py-4 font-bold text-energy transition hover:-translate-y-1"><span data-i18n="writeMe">Écrivez-moi</span> <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="relative z-10 mt-14 grid gap-3 border-t border-white/20 pt-7 sm:grid-cols-2 lg:grid-cols-4">
+          <a class="contact-link" href="mailto:tombozafy.ianel@gmail.com"><span>Email</span><strong>tombozafy.ianel@gmail.com</strong></a>
+          <a class="contact-link" href="tel:+261328178421"><span data-i18n="phone">Téléphone</span><strong>+261 32 81 784 21</strong></a>
+          <a class="contact-link" href="https://www.linkedin.com/in/ianel-tombozafy" target="_blank" rel="noopener noreferrer"><span>LinkedIn</span><strong>/in/ianel-tombozafy ↗</strong></a>
+          <a class="contact-link" href="https://github.com/Ianel" target="_blank" rel="noopener noreferrer"><span>GitHub</span><strong>@Ianel ↗</strong></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="mx-auto flex max-w-7xl flex-col gap-4 px-5 py-8 text-sm text-mist sm:flex-row sm:items-center sm:justify-between lg:px-8">
+    <p>© <span id="year"></span> Ianel Tombozafy. <span data-i18n="builtWithCuriosity">Construit avec curiosité.</span></p>
+    <div class="flex gap-5"><a class="hover:text-energy" href="https://web.facebook.com/ianel.tombozafy" target="_blank" rel="noopener noreferrer">Facebook</a><a class="hover:text-energy" href="#accueil"><span data-i18n="backToTop">Retour en haut</span> ↑</a></div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
 </html>
